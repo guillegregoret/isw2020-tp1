@@ -7,21 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button boton;
+public class MainActivity extends AppCompatActivity  {
+    Button boton1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button boton = (Button) findViewById(R.id.id_boton);
-        boton.setOnClickListener(this);
-
+        Button boton = (Button) findViewById(R.id.id_boton_1);
+        Button boton2 = (Button) findViewById(R.id.id_boton_2);
     }
 
-    @Override
-    public void onClick(View view) {
+    public void onClick1(View view) {
         Toast.makeText(getApplicationContext(), "Estamos en release 2", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onClick2(View view) {
+        Toast.makeText(getApplicationContext(), "It's a new feature!", Toast.LENGTH_SHORT).show();
     }
 }
