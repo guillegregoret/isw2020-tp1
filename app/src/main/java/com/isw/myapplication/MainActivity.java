@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     public void onClick2(View view) {
-        Toast.makeText(getApplicationContext(), "No debería mostrarse este mensaje", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "It's a new feature!", Toast.LENGTH_SHORT).show();
     }
 }
